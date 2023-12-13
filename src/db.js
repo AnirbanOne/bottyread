@@ -11,7 +11,7 @@ async function connectDB() {
   }
 
   // MongoDB connection URI with credentials and database name
-  const MONGO_URI = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@databasemain.gri3c4e.mongodb.net/paperbot?retryWrites=true&w=majority`;
+  const MONGO_URI = `mongodb+srv://${process.env.NEXT_PUBLIC_DB_USERNAME}:${process.env.NEXT_PUBLIC_DB_PASSWORD}@databasemain.gri3c4e.mongodb.net/paperbot?retryWrites=true&w=majority`;
 
   try {
     // Attempt to connect to MongoDB using Mongoose

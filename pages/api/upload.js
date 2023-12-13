@@ -59,7 +59,7 @@ export default async function handler(req, res) {
 			}
 
 			// 4. upload the file to s3
-			let data = await s3Upload(process.env.S3_BUCKET, file)
+			let data = await s3Upload(process.env.NEXT_PUBLIC_S3_BUCKET, file)
 
 			// 5. initialize pinecone
 			const filenameWithoutExt = file.name.split(".")[0]
