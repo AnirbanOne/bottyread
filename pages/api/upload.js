@@ -18,6 +18,7 @@ const createIndex = async (indexName) => {
 			createRequest: {
 				name: indexName,
 				dimension: 1536,  // fixed for OPENAI embeddings
+				metric: "cosine"
 			},
 		});
 		console.log('index created')
