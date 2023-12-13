@@ -83,7 +83,7 @@ export default function FileUpload() {
                     type="button"
                     onClick={handleUploadClick}
                     disabled={uploading}
-                    className="inline-block rounded bg-primary-main px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-sm transition duration-150 ease-in-out hover:bg-primary-dark hover:shadow-md focus:bg-primary-dark active:bg-primary-light disabled:bg-primary-light disabled:cursor-not-allowed"
+                    className="inline-block rounded bg-black px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-sm transition duration-150 ease-in-out hover:bg-primary-dark hover:shadow-md focus:bg-primary-dark active:bg-primary-light disabled:bg-primary-light disabled:cursor-not-allowed"
                 >
                     {/* Display appropriate text based on uploading state */}
                     {uploading ? 'Please wait...' : 'Upload'}
